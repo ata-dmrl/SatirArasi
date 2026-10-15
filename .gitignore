@@ -1,0 +1,9 @@
+node_modules/
+dist/
+dist-harness/
+cypress/videos/
+cypress/screenshots/
+eval/corpus/
+eval/runs/
+.claude/
+*.log

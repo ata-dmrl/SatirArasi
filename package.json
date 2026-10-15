@@ -1,0 +1,30 @@
+{
+  "name": "satir-arasi",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Satır Arası — sözleşmelerin satır arasını okur: kullanım koşulları / gizlilik / abonelik metinleri için alıntıyla doğrulanmış risk raporu üreten Chrome uzantısı (page-agent tabanlı).",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test test/*.test.js",
+    "eval:fetch": "node eval/fetch-corpus.mjs",
+    "eval": "node eval/run-eval.mjs",
+    "serve": "node scripts/serve.mjs",
+    "cy:run": "cypress run --browser electron",
+    "demo": "npm run build && start-server-and-test serve http://localhost:4173/terms.html cy:demo",
+    "cy:demo": "cypress run --browser electron --spec cypress/e2e/demo.cy.js",
+    "e2e": "npm run build && start-server-and-test serve http://localhost:4173/terms.html cy:run",
+    "eval:validator": "node eval/validator-eval.mjs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.17.0",
+    "esbuild": "^0.25.12",
+    "start-server-and-test": "^2.1.5"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.132.1",
+    "@page-agent/page-controller": "^1.12.4",
+    "page-agent": "^1.12.4"
+  }
+}

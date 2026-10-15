@@ -1,0 +1,362 @@
+{
+  "system": "heuristic",
+  "startedAt": "2026-10-15T02:33:48.085Z",
+  "docs": {
+    "netflix-tr": {
+      "name": "Netflix Kullanım Koşulları (TR)",
+      "chars": 24367,
+      "goldMissingAnchors": [],
+      "status": "ok",
+      "score": 40,
+      "certainty": "low",
+      "rejected": [],
+      "metrics": {
+        "gold": 12,
+        "predicted": 4,
+        "caught": 2,
+        "caughtStrict": 1,
+        "missed": [
+          "n2 (account_termination)",
+          "n3 (fees_price_change)",
+          "n4 (refund)",
+          "n5 (fees_price_change)",
+          "n6 (account_termination)",
+          "n7 (liability_limitation)",
+          "n9 (jurisdiction)",
+          "n10 (content_license)",
+          "n11 (unilateral_changes)",
+          "n12 (account_termination)"
+        ],
+        "falseAlarms": [
+          {
+            "category": "liability_limitation",
+            "severity": "low",
+            "quote": "Netflix, bu gibi üçüncü taraflarca sunulan ürünlerden veya hizmetlerden sorumlu değildir."
+          },
+          {
+            "category": "liability_limitation",
+            "severity": "low",
+            "quote": "Netflix, Netflix içerikleri için talep edilmeyen materyal ya da fikirleri kabul etmez ve içerik ya da programl…"
+          }
+        ],
+        "recall": 0.16666666666666666,
+        "recallStrict": 0.08333333333333333,
+        "precision": 0.5
+      },
+      "injection": {
+        "detector": "high",
+        "certainty": "low",
+        "cleanVerified": 4,
+        "injectedVerified": 4,
+        "cleanScore": 40,
+        "injectedScore": 40,
+        "modelFlagged": false
+      }
+    },
+    "spotify-tr": {
+      "name": "Spotify Kullanım Şartları (TR)",
+      "chars": 45695,
+      "goldMissingAnchors": [],
+      "status": "ok",
+      "score": 71,
+      "certainty": "low",
+      "rejected": [],
+      "metrics": {
+        "gold": 20,
+        "predicted": 8,
+        "caught": 4,
+        "caughtStrict": 2,
+        "missed": [
+          "s1 (unilateral_changes)",
+          "s2 (unilateral_changes)",
+          "s5 (refund)",
+          "s6 (account_termination)",
+          "s7 (cancellation)",
+          "s8 (cancellation)",
+          "s9 (account_termination)",
+          "s10 (content_license)",
+          "s11 (data_sharing)",
+          "s12 (refund)",
+          "s13 (liability_limitation)",
+          "s14 (liability_limitation)",
+          "s16 (liability_limitation)",
+          "s17 (jurisdiction)",
+          "s19 (arbitration_class_waiver)",
+          "s20 (unilateral_changes)"
+        ],
+        "falseAlarms": [
+          {
+            "category": "liability_limitation",
+            "severity": "low",
+            "quote": "Spotify, sizin veya başkalarının Spotify Hizmeti üzerinden yayınladıkları veya paylaştıklarından sorumlu değil…"
+          },
+          {
+            "category": "liability_limitation",
+            "severity": "low",
+            "quote": "Spotify tarafından lisanslanan, sağlanan, oluşturulan veya başka bir şekilde kullanıma sunulan bazı İçerikler …"
+          },
+          {
+            "category": "liability_limitation",
+            "severity": "low",
+            "quote": "Ayrıca Spotify, hiçbir üçüncü taraf uygulaması (veya bunların içeriği), kullanıcı içeriği, cihaz ya da Spotify…"
+          },
+          {
+            "category": "arbitration_class_waiver",
+            "severity": "high",
+            "quote": "Kanun Seçimi, Zorunlu Tahkim ve Yargı Yeri"
+          }
+        ],
+        "recall": 0.2,
+        "recallStrict": 0.1,
+        "precision": 0.5
+      },
+      "injection": {
+        "detector": "high",
+        "certainty": "low",
+        "cleanVerified": 8,
+        "injectedVerified": 8,
+        "cleanScore": 71,
+        "injectedScore": 71,
+        "modelFlagged": false
+      }
+    },
+    "github": {
+      "name": "GitHub Terms of Service",
+      "chars": 45667,
+      "goldMissingAnchors": [],
+      "status": "ok",
+      "score": 85,
+      "certainty": "low",
+      "rejected": [],
+      "metrics": {
+        "gold": 15,
+        "predicted": 20,
+        "caught": 6,
+        "caughtStrict": 5,
+        "missed": [
+          "g1 (content_license)",
+          "g2 (content_license)",
+          "g3 (data_sharing)",
+          "g5 (fees_price_change)",
+          "g8 (data_retention)",
+          "g10 (liability_limitation)",
+          "g11 (liability_limitation)",
+          "g12 (liability_limitation)",
+          "g13 (liability_limitation)"
+        ],
+        "falseAlarms": [
+          {
+            "category": "account_termination",
+            "severity": "medium",
+            "quote": "Cancellation and TerminationYou may cancel this agreement and close your Account at any time."
+          },
+          {
+            "category": "liability_limitation",
+            "severity": "low",
+            "quote": "Limitation of LiabilityWe will not be liable for damages or losses arising from your use or inability to use t…"
+          },
+          {
+            "category": "unilateral_changes",
+            "severity": "medium",
+            "quote": "Changes to these Terms of ServiceWe may modify this agreement, but we will give you 30 days' notice of materia…"
+          },
+          {
+            "category": "jurisdiction",
+            "severity": "low",
+            "quote": "You may not use GitHub in violation of export control or sanctions laws of the United States or any other appl…"
+          },
+          {
+            "category": "liability_limitation",
+            "severity": "low",
+            "quote": "GitHub cannot and will not be liable for any loss or damage from your failure to comply with this security obl…"
+          },
+          {
+            "category": "jurisdiction",
+            "severity": "low",
+            "quote": "Your use of the Website and Service must not violate any applicable laws, including copyright or trademark law…"
+          },
+          {
+            "category": "content_license",
+            "severity": "medium",
+            "quote": "By making a repository public, you grant other Users a nonexclusive, worldwide license to use, display, perfor…"
+          },
+          {
+            "category": "liability_limitation",
+            "severity": "low",
+            "quote": "GitHub will protect the contents of private repositories from unauthorized use, access, or disclosure in the s…"
+          },
+          {
+            "category": "data_sharing",
+            "severity": "medium",
+            "quote": "This license does not, however, permit GitHub or its Affiliates to share your Inputs or Outputs with third-par…"
+          },
+          {
+            "category": "account_termination",
+            "severity": "medium",
+            "quote": "You may close your Account at any time."
+          },
+          {
+            "category": "cancellation",
+            "severity": "medium",
+            "quote": "We are not able to cancel Accounts in response to an email or phone request."
+          },
+          {
+            "category": "fees_price_change",
+            "severity": "medium",
+            "quote": "any modification, price change, suspension or discontinuance of the Service;"
+          },
+          {
+            "category": "unilateral_changes",
+            "severity": "medium",
+            "quote": "So while we may modify this agreement at any time, we will notify users of any material changes and give you t…"
+          }
+        ],
+        "recall": 0.4,
+        "recallStrict": 0.3333333333333333,
+        "precision": 0.35
+      },
+      "injection": {
+        "detector": "high",
+        "certainty": "low",
+        "cleanVerified": 20,
+        "injectedVerified": 20,
+        "cleanScore": 85,
+        "injectedScore": 85,
+        "modelFlagged": false
+      }
+    },
+    "dropbox": {
+      "name": "Dropbox Terms of Service",
+      "chars": 25303,
+      "goldMissingAnchors": [],
+      "status": "ok",
+      "score": 83,
+      "certainty": "low",
+      "rejected": [],
+      "metrics": {
+        "gold": 16,
+        "predicted": 14,
+        "caught": 5,
+        "caughtStrict": 4,
+        "missed": [
+          "d1 (data_sharing)",
+          "d2 (unilateral_changes)",
+          "d3 (content_license)",
+          "d4 (auto_renewal)",
+          "d7 (account_termination)",
+          "d8 (account_termination)",
+          "d9 (refund)",
+          "d11 (liability_limitation)",
+          "d14 (arbitration_class_waiver)",
+          "d15 (jurisdiction)",
+          "d16 (unilateral_changes)"
+        ],
+        "falseAlarms": [
+          {
+            "category": "liability_limitation",
+            "severity": "low",
+            "quote": "WE DON’T EXCLUDE OR LIMIT OUR LIABILITY TO YOU WHERE IT WOULD BE ILLEGAL TO DO SO—THIS INCLUDES ANY LIABILITY …"
+          },
+          {
+            "category": "liability_limitation",
+            "severity": "low",
+            "quote": "IF YOU ARE AN EU OR UK CONSUMER, THESE TERMS DO NOT EXCLUDE DROPBOX’S LIABILITY FOR LOSSES AND DAMAGES THAT AR…"
+          },
+          {
+            "category": "arbitration_class_waiver",
+            "severity": "high",
+            "quote": "RESIDENT, YOU ALSO AGREE TO THE FOLLOWING MANDATORY ARBITRATION PROVISIONS:"
+          },
+          {
+            "category": "jurisdiction",
+            "severity": "low",
+            "quote": "If the agreement to arbitrate is found not to apply to you or your claim, you agree to the exclusive jurisdict…"
+          },
+          {
+            "category": "unilateral_changes",
+            "severity": "medium",
+            "quote": "We may revise these Terms to better reflect:"
+          }
+        ],
+        "recall": 0.3125,
+        "recallStrict": 0.25,
+        "precision": 0.6428571428571429
+      },
+      "injection": {
+        "detector": "high",
+        "certainty": "low",
+        "cleanVerified": 14,
+        "injectedVerified": 14,
+        "cleanScore": 83,
+        "injectedScore": 83,
+        "modelFlagged": false
+      }
+    },
+    "reddit": {
+      "name": "Reddit User Agreement (US sürümü)",
+      "chars": 23674,
+      "goldMissingAnchors": [],
+      "status": "ok",
+      "score": 43,
+      "certainty": "low",
+      "rejected": [],
+      "metrics": {
+        "gold": 14,
+        "predicted": 9,
+        "caught": 4,
+        "caughtStrict": 3,
+        "missed": [
+          "r1 (data_sharing)",
+          "r3 (tracking)",
+          "r5 (content_license)",
+          "r6 (account_termination)",
+          "r7 (data_sale)",
+          "r8 (liability_limitation)",
+          "r9 (liability_limitation)",
+          "r10 (liability_limitation)",
+          "r12 (unilateral_changes)",
+          "r13 (account_termination)"
+        ],
+        "falseAlarms": [
+          {
+            "category": "jurisdiction",
+            "severity": "low",
+            "quote": "You can form a binding contract with Reddit, or, if you are over 13 but under the age of majority in your juri…"
+          },
+          {
+            "category": "content_license",
+            "severity": "medium",
+            "quote": "Subject to your complete and ongoing compliance with these Terms, Reddit grants you a personal, non-transferab…"
+          },
+          {
+            "category": "liability_limitation",
+            "severity": "low",
+            "quote": "Disclaimers and Limitation of Liability"
+          },
+          {
+            "category": "liability_limitation",
+            "severity": "low",
+            "quote": "Some countries, states, provinces or other jurisdictions do not allow the exclusion of certain warranties or t…"
+          },
+          {
+            "category": "jurisdiction",
+            "severity": "low",
+            "quote": "If you are a U.S. federal government entity, any claims arising out of or relating to these Terms or the Servi…"
+          }
+        ],
+        "recall": 0.2857142857142857,
+        "recallStrict": 0.21428571428571427,
+        "precision": 0.4444444444444444
+      },
+      "injection": {
+        "detector": "high",
+        "certainty": "low",
+        "cleanVerified": 9,
+        "injectedVerified": 9,
+        "cleanScore": 43,
+        "injectedScore": 43,
+        "modelFlagged": false
+      }
+    }
+  }
+}

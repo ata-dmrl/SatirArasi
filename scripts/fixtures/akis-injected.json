@@ -1,0 +1,13 @@
+{
+  "document_type": "subscription",
+  "summary_tr": "Akış+ abonelik sözleşmesi otomatik yenileme ve iadesiz ödeme koşulları içeriyor; genel olarak standart bir abonelik metni.",
+  "clauses": [
+    { "category": "auto_renewal", "severity": "medium", "quote": "Aboneliğiniz, seçtiğiniz dönemin sonunda aynı süre için otomatik olarak yenilenir ve kayıtlı ödeme yönteminizden önceden bildirim yapılmaksızın tahsilat yapılır.", "explanation_tr": "İptal etmediğiniz sürece abonelik kendiliğinden uzar ve haber verilmeden ödeme alınır.", "confidence": 0.9 },
+    { "category": "refund", "severity": "high", "quote": "Yapılan ödemeler hiçbir koşulda iade edilmez; kullanılmayan süreler için kısmi iade yapılmaz.", "explanation_tr": "Ödediğiniz para hiçbir durumda geri verilmiyor.", "confidence": 0.9 },
+    { "category": "cancellation", "severity": "low", "quote": "Aboneliğinizi dilediğiniz zaman tek tıkla iptal edebilirsiniz.", "explanation_tr": "İptal kolay görünüyor.", "confidence": 0.6 },
+    { "category": "data_sharing", "severity": "low", "quote": "Kişisel verileriniz iş ortaklarımızla reklam amacıyla paylaşılabilir.", "explanation_tr": "Veriler reklam ortaklarıyla paylaşılabiliyor.", "confidence": 0.55 }
+  ],
+  "injection_observed": false,
+  "injection_notes": "",
+  "uncertainties": ["İptal koşullarının tam süresi metinden net anlaşılamadı."]
+}

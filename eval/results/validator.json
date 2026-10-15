@@ -1,0 +1,61 @@
+{
+  "tally": {
+    "verbatim": {
+      "total": 77,
+      "correct": 77,
+      "reasons": {}
+    },
+    "typography": {
+      "total": 77,
+      "correct": 77,
+      "reasons": {}
+    },
+    "paraphrase": {
+      "total": 77,
+      "correct": 77,
+      "reasons": {
+        "quote_not_verbatim": 75,
+        "quote_not_found": 2
+      }
+    },
+    "negation": {
+      "total": 77,
+      "correct": 77,
+      "reasons": {
+        "quote_not_verbatim": 76,
+        "quote_not_found": 1
+      }
+    },
+    "word_drop": {
+      "total": 77,
+      "correct": 77,
+      "reasons": {
+        "quote_not_verbatim": 76,
+        "quote_not_found": 1
+      }
+    },
+    "ellipsis": {
+      "total": 77,
+      "correct": 77,
+      "reasons": {
+        "quote_not_verbatim": 77
+      }
+    },
+    "fabricated": {
+      "total": 77,
+      "correct": 77,
+      "reasons": {
+        "quote_not_found": 73,
+        "quote_not_verbatim": 4
+      }
+    },
+    "hidden_only": {
+      "total": 77,
+      "correct": 77,
+      "reasons": {
+        "quote_from_hidden": 77
+      }
+    }
+  },
+  "failures": []
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Satır Arası — Ayarlar</title>
+  <style>
+    :root { --bg:#fff; --fg:#1c1d21; --muted:#5f6470; --line:#e3e5ea; --accent:#2f5bea; --warn:#fff8d6; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#17181c; --fg:#e9eaee; --muted:#a0a5b1; --line:#2c2e35; --accent:#7c9cff; --warn:#352f12; } }
+    body { background:var(--bg); color:var(--fg); font:14px/1.5 system-ui,sans-serif; max-width:640px; margin:24px auto; padding:0 16px; }
+    label { display:block; margin-top:14px; font-weight:600; }
+    input, select { width:100%; padding:8px; margin-top:4px; border:1px solid var(--line); border-radius:8px; background:var(--bg); color:var(--fg); font:inherit; }
+    input[type=checkbox] { width:auto; }
+    .hint { color:var(--muted); font-size:12.5px; font-weight:400; }
+    .note { background:var(--warn); padding:10px 12px; border-radius:8px; margin:12px 0; }
+    fieldset { border:1px solid var(--line); border-radius:10px; margin-top:20px; padding:4px 14px 14px; }
+    button { margin-top:18px; background:var(--accent); color:#fff; border:0; border-radius:8px; padding:10px 16px; font:inherit; font-weight:600; cursor:pointer; }
+    #status { margin-left:10px; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <h1>Satır Arası</h1>
+  <p class="hint">Sözleşmelerin satır arasını okur — kullanım koşulları, gizlilik ve abonelik metinleri için alıntıyla doğrulanmış risk raporu.</p>
+  <p class="note"><strong>Hukuki tavsiye değildir.</strong> Bu uzantı sözleşme metinlerini otomatik okur; sonuçlar hatalı veya eksik olabilir.</p>
+  <fieldset>
+    <legend>Analiz modeli (kendi anahtarınız)</legend>
+    <label>Sağlayıcı
+      <select id="provider">
+        <option value="anthropic">Anthropic (Claude)</option>
+        <option value="openai">OpenAI uyumlu (OpenAI, Qwen, DeepSeek, Ollama…)</option>
+      </select>
+    </label>
+    <label>API anahtarı <span class="hint">— yalnızca bu tarayıcıda chrome.storage.local içinde saklanır, sayfalara verilmez.</span>
+      <input id="apiKey" type="password" autocomplete="off">
+    </label>
+    <label>Model <span class="hint">— boş: Anthropic için claude-opus-5-5, OpenAI için gpt-4.1-mini</span>
+      <input id="model" type="text" placeholder="claude-opus-5-5">
+    </label>
+    <label>Base URL <span class="hint">— OpenAI uyumlu sağlayıcılar için (ör. https://dashscope-intl.aliyuncs.com/compatible-mode/v1)</span>
+      <input id="baseURL" type="url" placeholder="https://api.openai.com/v1">
+    </label>
+    <label><input id="autoAnalyze" type="checkbox"> Sözleşme sayfası açıldığında otomatik analiz et <span class="hint">(her sayfa API maliyeti doğurur)</span></label>
+  </fieldset>
+  <fieldset>
+    <legend>page-agent gezinme modu (isteğe bağlı)</legend>
+    <p class="hint">Rapor panelinde doğal dil komutuyla sayfada gezinmeyi açar ("İptal bölümüne kaydır"). Yalnızca kaydırma araçları etkindir. page-agent sayfa içinde çalıştığı için bu anahtar içerik betiğine iletilir — ayrı, kısıtlı bir anahtar kullanın. page-agent'in demo LLM'i kullanılmaz.</p>
+    <label><input id="agentEnabled" type="checkbox"> Etkinleştir</label>
+    <label>OpenAI uyumlu Base URL <input id="agentBaseURL" type="url"></label>
+    <label>Model <input id="agentModel" type="text"></label>
+    <label>API anahtarı <input id="agentApiKey" type="password" autocomplete="off"></label>
+  </fieldset>
+  <button id="save">Kaydet</button><span id="status"></span>
+  <script src="options.js"></script>
+</body>
+</html>

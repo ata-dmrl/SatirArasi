@@ -1,0 +1,8 @@
+[
+  { "id": "netflix-tr", "name": "Netflix Kullanım Koşulları (TR)", "lang": "tr", "url": "https://help.netflix.com/legal/termsofuse?locale=tr-TR", "headers": { "Accept-Language": "tr-TR" } },
+  { "id": "spotify-tr", "name": "Spotify Kullanım Şartları (TR)", "lang": "tr", "url": "https://www.spotify.com/tr/legal/end-user-agreement/" },
+  { "id": "github", "name": "GitHub Terms of Service", "lang": "en", "url": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service" },
+  { "id": "dropbox", "name": "Dropbox Terms of Service", "lang": "en", "url": "https://www.dropbox.com/terms" },
+  { "id": "reddit", "name": "Reddit User Agreement (US sürümü)", "lang": "en", "url": "https://redditinc.com/policies/user-agreement",
+    "crop": { "start": "Hello, redditors and people of the Internet!", "end": "legally-binding agreement between you and Reddit, Inc." } }
+]

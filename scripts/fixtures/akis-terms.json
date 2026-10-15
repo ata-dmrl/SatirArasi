@@ -1,0 +1,20 @@
+{
+  "document_type": "subscription",
+  "summary_tr": "Akış+ abonelik sözleşmesi; otomatik yenileme, uzun iptal bildirim süresi, iadesiz ödeme ve kişisel verilerin reklam amaçlı paylaşımı gibi kullanıcı aleyhine maddeler içeriyor. Uyuşmazlıklar tahkimle çözülüyor ve toplu dava hakkından feragat ediliyor.",
+  "clauses": [
+    { "category": "auto_renewal", "severity": "medium", "quote": "Aboneliğiniz, seçtiğiniz dönemin sonunda aynı süre için otomatik olarak yenilenir ve kayıtlı ödeme yönteminizden önceden bildirim yapılmaksızın tahsilat yapılır.", "explanation_tr": "İptal etmediğiniz sürece abonelik kendiliğinden uzar ve size haber verilmeden kartınızdan ödeme alınır.", "confidence": 0.95 },
+    { "category": "fees_price_change", "severity": "medium", "quote": "Akış+, abonelik ücretlerini dilediği zaman değiştirme hakkını saklı tutar", "explanation_tr": "Şirket fiyatı istediği zaman artırabilir; yeni fiyat bir sonraki dönemden itibaren uygulanır.", "confidence": 0.9 },
+    { "category": "cancellation", "severity": "high", "quote": "Aboneliğinizi iptal etmek için en geç dönem bitiminden 30 gün önce yazılı bildirimde bulunmanız gerekir", "explanation_tr": "İptal için dönem bitmeden en az 30 gün önce yazılı bildirim gerekiyor; geç kalırsanız bir dönem daha ödeme yaparsınız.", "confidence": 0.93 },
+    { "category": "refund", "severity": "high", "quote": "Yapılan ödemeler hiçbir koşulda iade edilmez; kullanılmayan süreler için kısmi iade yapılmaz.", "explanation_tr": "Hangi durumda olursa olsun ödediğiniz para geri verilmiyor; kullanmadığınız günler için de iade yok.", "confidence": 0.96 },
+    { "category": "data_sale", "severity": "high", "quote": "İzleme geçmişiniz, cihaz bilgileriniz ve konum verileriniz, size kişiselleştirilmiş reklam gösterilmesi amacıyla iş ortaklarımız ve reklam ağlarıyla paylaşılabilir.", "explanation_tr": "Ne izlediğiniz, cihazınız ve konumunuz reklam şirketleriyle paylaşılabiliyor.", "confidence": 0.9 },
+    { "category": "data_retention", "severity": "medium", "quote": "Hesabınızı kapatmanız halinde dahi kişisel verileriniz 10 yıl süreyle saklanır.", "explanation_tr": "Hesabınızı silseniz bile verileriniz 10 yıl boyunca tutuluyor.", "confidence": 0.92 },
+    { "category": "content_license", "severity": "medium", "quote": "dünya çapında, süresiz, bedelsiz ve alt lisans verilebilir bir kullanım lisansı vermiş olursunuz", "explanation_tr": "Yüklediğiniz yorum ve fotoğrafları şirket süresiz ve ücretsiz kullanabilir, başkalarına da kullandırabilir.", "confidence": 0.88 },
+    { "category": "account_termination", "severity": "medium", "quote": "Akış+, herhangi bir sebep göstermeksizin ve önceden bildirimde bulunmaksızın hesabınızı askıya alabilir veya kapatabilir.", "explanation_tr": "Şirket hesabınızı gerekçe göstermeden ve haber vermeden kapatabilir.", "confidence": 0.9 },
+    { "category": "liability_limitation", "severity": "low", "quote": "Akış+, hizmet kesintilerinden, veri kayıplarından veya içeriklerin doğruluğundan hiçbir şekilde sorumlu tutulamaz.", "explanation_tr": "Hizmet kesilse veya verileriniz kaybolsa bile şirket sorumluluk kabul etmiyor.", "confidence": 0.85 },
+    { "category": "unilateral_changes", "severity": "medium", "quote": "Akış+ bu koşulları tek taraflı olarak dilediği zaman güncelleyebilir", "explanation_tr": "Koşullar size sorulmadan değiştirilebilir; kullanmaya devam etmek değişikliği kabul saymak demek.", "confidence": 0.9 },
+    { "category": "arbitration_class_waiver", "severity": "high", "quote": "İstanbul Tahkim Merkezi kurallarına göre tahkim yoluna gidilir ve Kullanıcı toplu dava açma hakkından feragat eder.", "explanation_tr": "Anlaşmazlıklar mahkeme yerine tahkimde çözülüyor ve diğer kullanıcılarla birlikte toplu dava açamıyorsunuz.", "confidence": 0.93 }
+  ],
+  "injection_observed": false,
+  "injection_notes": "",
+  "uncertainties": []
+}
